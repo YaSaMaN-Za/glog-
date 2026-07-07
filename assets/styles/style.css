@@ -21,7 +21,8 @@ img {
     max-width: 100%;
 }
 
-input, button {
+input,
+button {
     font: inherit;
     border: none;
     outline: none;
@@ -29,4 +30,32 @@ input, button {
 
 button {
     cursor: pointer;
+}
+
+/* Variables */
+:root {
+    /* Colors */
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary: #0f172a;
+    --surface: rgba(255, 255, 255, .08);
+    --surface-hover: rgba(255, 255, 255, .13);
+    --border: rgba(255, 255, 255, .15);
+    --white: #fff;
+    --text: #e2e8f0;
+    --text-light: #94a3b8;
+    --success: #10b981;
+
+    /* Shadow */
+    --shadow-lg: 0 25px 50px rgba(0, 0, 0, .35);
+    --shadow-sm: 0 10px 25px rgba(0, 0, 0, .15);
+
+    /* Radius */
+    --radius-xl: 32px;
+    --radius-lg: 22px;
+    --radius-md: 16px;
+    --radius-sm: 12px;
+
+    /* Transition */
+    --transition: .35s ease;
 }
