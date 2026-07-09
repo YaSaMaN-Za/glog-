@@ -99,6 +99,28 @@ body {
     position: relative;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.logo i {
+    width: 55px;
+    height: 55px;
+    border-radius: var(--radius-md);
+    display: grid;
+    place-items: center;
+    font-size: 1.35rem;
+    background: linear-gradient(135deg,
+            var(--primary),
+            var(--primary-dark));
+    box-shadow: 0 15px 35px rgba(99, 102, 241, .35);
+}
 
 .gallery {
     /* Temporary */
