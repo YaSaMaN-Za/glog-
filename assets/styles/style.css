@@ -88,3 +88,19 @@ body {
     box-shadow: var(--shadow-lg);
     backdrop-filter: blur(30px);
 }
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgba(7, 15, 30, .55);
+    backdrop-filter: blur(30px);
+    position: relative;
+}
+
+
+.gallery {
+    /* Temporary */
+    display: none;
+}
