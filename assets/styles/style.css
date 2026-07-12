@@ -59,6 +59,7 @@ button {
     --radius-lg: 22px;
     --radius-md: 16px;
     --radius-sm: 12px;
+    --radius-xs: 6px;
 
     /* Transition */
     --transition: .35s ease;
@@ -167,6 +168,46 @@ body {
     border-color: var(--primary);
     background: var(--surface-focus);
     box-shadow: 0 0 5px 5px var(--shadow-primary-sm);
+}
+
+.options {
+    margin-top: -5px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-light);
+    font-size: .92rem;
+    cursor: pointer;
+}
+
+.remember input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: var(--radius-xs);
+    border: 2px solid var(--border);
+    background: transparent;
+    transition: var(--transition);
+    position: relative;
+}
+
+.remember input:checked {
+    background: var(--primary);
+    border-color: var(--primary-dark);
+}
+
+.remember input:checked::after {
+    content: "✔";
+    position: absolute;
+    color: var(--white);
+    font-size: 1.3rem;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery {
