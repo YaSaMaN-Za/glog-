@@ -288,6 +288,23 @@ body {
     color: #52dbbd;
 }
 
+.login-link {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--text-light);
+    font-size: .95rem;
+}
+
+.login-link a {
+    color: var(--primary);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.login-link a:hover {
+    color: var(--white);
+}
+
 .gallery {
     /* Temporary */
     display: none;
