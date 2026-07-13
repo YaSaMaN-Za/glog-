@@ -322,3 +322,20 @@ body {
     gap: 20px;
     padding: 40px;
 }
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    background: #111827;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .6s;
+}
