@@ -149,7 +149,7 @@ body {
     width: 100%;
     height: 58px;
     padding-inline: 20px;
-    border-radius: 16px;
+    border-radius: var(--radius-md);
     background: var(--surface);
     border: 1px solid var(--border);
     color: var(--white);
@@ -208,6 +208,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.register-btn {
+    height: 60px;
+    border-radius: var(--radius-md);
+    color: var(--white);
+    background: linear-gradient(135deg, var(--primary), #8c5cfc);
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: var(--transition);
+    box-shadow: 0 10px 15px var(--shadow-primary-sm);
+}
+
+.register-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 25px var(--shadow-primary-lg);
+}
+
+.register-btn:active {
+    transform: translateY(0);
 }
 
 .gallery {
