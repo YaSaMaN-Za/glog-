@@ -230,6 +230,26 @@ body {
     transform: translateY(0);
 }
 
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 25px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.divider span {
+    color: var(--text-light);
+    font-size: .9rem;
+}
+
 .gallery {
     /* Temporary */
     display: none;
