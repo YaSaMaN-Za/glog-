@@ -318,7 +318,8 @@ body {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 150px);
+    grid-template-rows: repeat(5, 100px);
+    align-content: space-around;
     gap: 20px;
     padding: 40px;
 }
@@ -338,4 +339,26 @@ body {
     height: 100%;
     object-fit: cover;
     transition: .6s;
+}
+
+.card1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.card2 {
+    grid-row: span 3;
+}
+
+.card3 {
+    grid-column: span 2;
+}
+
+.card4 {
+    grid-row: span 2;
+}
+
+.card5 {
+    grid-column: span 2;
+    grid-row: span 2;
 }
