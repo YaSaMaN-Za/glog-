@@ -65,6 +65,16 @@ button {
     --transition: .35s ease;
 }
 
+::selection {
+    color: var(--primary-dark);
+    background: #c3c3de;
+}
+
+::-moz-selection {
+    color: var(--primary-dark);
+    background: #c3c3de;
+}
+
 /* Body */
 body {
     font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
