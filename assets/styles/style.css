@@ -123,6 +123,13 @@ body {
     font-weight: 700;
     color: var(--white);
 }
+.logo:hover i,
+ .logo:hover .text-logo {
+
+     transform: translateY(-4px);
+     box-shadow: 0 15px 25px var(--shadow-primary-lg);
+ transition: var(--transition);
+    }
 
 .logo i {
     width: 55px;
@@ -136,13 +143,7 @@ body {
             var(--primary-dark));
     box-shadow: 0 15px 35px var(--shadow-primary-lg);
 }
-.logo:hover i,.logo:hover .matn {
-
-     transform: translateY(-4px);
-     box-shadow: 0 15px 25px var(--shadow-primary-lg);
- }
-
- .matn {
+.text-logo {
      display: inline-flex;
      align-items: center;
      gap: 10px;
@@ -154,8 +155,7 @@ body {
      background: linear-gradient(135deg, var(--primary), #f8c704, #FDBA74);
      box-shadow: 0 15px 35px rgba(219, 171, 12, 0.35);
  }
-
- .matn i {
+ .text-logo i {
      font-size: 22px;
  }
 .login-form {
@@ -318,6 +318,9 @@ body {
 .socials button:last-child:hover {
     color: #52dbbd;
 }
+.socials button:nth-child(2):hover {
+     color:#0077B5;
+ }
 
 .login-link {
     text-align: center;
